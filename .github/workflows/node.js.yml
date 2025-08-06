@@ -18,7 +18,9 @@ jobs:
         with:
           node-version: 18.x
 
-      - run: install
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
 
       - name: Cek versi Node.js
         run: node -v
